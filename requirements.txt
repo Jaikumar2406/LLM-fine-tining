@@ -1,0 +1,8 @@
+os
+datasets
+huggingface_hub
+peft 
+torch
+transformers
+pydantic
+fastapi

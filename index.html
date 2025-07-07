@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>AI Assistant</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#content" class="nav-link">Chat</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to AI Chat Assistant</h1>
+                <p class="hero-description">
+                    Experience the power of artificial intelligence with our advanced chat assistant. 
+                    Ask questions, get instant answers, and explore the possibilities of AI-powered conversations.
+                </p>
+                <div class="hero-features">
+                    <div class="feature">
+                        <div class="feature-icon">🤖</div>
+                        <h3>Smart AI</h3>
+                        <p>Powered by advanced language models</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Instant Response</h3>
+                        <p>Get answers in real-time</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🌟</div>
+                        <h3>Easy to Use</h3>
+                        <p>Simple and intuitive interface</p>
+                    </div>
+                </div>
+                <a href="#content" class="cta-button">Start Chatting</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content/Chat Section -->
+    <section id="content" class="chat-section">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Chat with AI Assistant</h2>
+                <p>Ask me anything and I'll help you find the answers!</p>
+            </div>
+            
+            <div class="chat-box" id="chatBox">
+                <div class="welcome-message">
+                    <div class="message bot-message">
+                        <div class="message-avatar bot-avatar">🤖</div>
+                        <div class="message-content">
+                            <p>Hello! I'm your AI assistant. How can I help you today?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-container">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="questionInput" 
+                        placeholder="Enter your question here..." 
+                        class="chat-input"
+                        maxlength="500"
+                    >
+                    <button id="generateBtn" class="generate-btn">
+                        <span class="btn-text">Generate</span>
+                        <span class="btn-loading" style="display: none;">
+                            <div class="spinner"></div>
+                        </span>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <small>Press Enter to send or click Generate</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <h2>About Our AI Assistant</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Our AI Chat Assistant is designed to provide intelligent, helpful responses to your questions. 
+                        Whether you need information, creative assistance, or just want to have a conversation, 
+                        our AI is here to help.
+                    </p>
+                    <ul class="about-features">
+                        <li>✅ Fine-tuning llama model</li>
+                        <li>✅ use custom dataset</li>
+                        <li>✅ used hawaii txt datasets</li>
+                        <li>✅ Fine-tuning using LoRA</li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>1M+</h3>
+                        <p>Questions Answered</p>
+                    </div>
+                    <div class="stat">
+                        <h3>24/7</h3>
+                        <p>Available</p>
+                    </div>
+                    <div class="stat">
+                        <h3>99%</h3>
+                        <p>Accuracy Rate</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
